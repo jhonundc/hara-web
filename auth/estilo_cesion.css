@@ -1,0 +1,184 @@
+/* === ESTILO PARA INICIAR SESIÓN === */
+input[type="email"] {
+  width: 100%;
+  padding: 10px 12px;
+  font-size: 16px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  box-sizing: border-box;
+  background-color: #fafafa;
+  transition: border-color 0.3s ease;
+}
+
+input[type="email"]:focus {
+  border-color: #6a4e37;
+  outline: none;
+  background-color: #fff;
+}
+
+
+.login-container {
+  max-width: 400px;
+  margin: 80px auto;
+  background: #fff;
+  border-radius: 12px;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+  padding: 30px;
+}
+
+.login-container h2 {
+  text-align: center;
+  margin-bottom: 25px;
+  color: #333;
+  font-weight: 600;
+}
+
+.form-group {
+  margin-bottom: 20px;
+}
+
+label {
+  display: block;
+  margin-bottom: 6px;
+  color: #555;
+  font-size: 15px;
+}
+
+input[type="text"],
+input[type="password"] {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  font-size: 16px;
+  box-sizing: border-box;
+}
+
+.boton-login {
+  width: 100%;
+  background-color: #6a4e37;
+  color: white;
+  padding: 12px;
+  border: none;
+  border-radius: 6px;
+  font-size: 16px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.boton-login:hover {
+  background-color: #523d2c;
+}
+
+.mensaje-error {
+  color: red;
+  text-align: center;
+  margin-bottom: 15px;
+  font-weight: bold;
+}
+
+.registro-link {
+  text-align: center;
+  margin-top: 20px;
+  font-size: 14px;
+}
+
+.registro-link a {
+  color: #6a4e37;
+  text-decoration: none;
+}
+
+.registro-link a:hover {
+  text-decoration: underline;
+}
+/* === ESTILO PARA REGISTRO DE USUARIO === */
+
+.registro-container {
+  max-width: 450px;
+  margin: 80px auto;
+  background: #fff;
+  border-radius: 12px;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+  padding: 35px;
+}
+
+.registro-container h2 {
+  text-align: center;
+  margin-bottom: 25px;
+  color: #3d2b1f;
+  font-weight: 600;
+}
+
+.registro-form .form-group {
+  margin-bottom: 20px;
+}
+
+.registro-form label {
+  display: block;
+  margin-bottom: 6px;
+  color: #5a4c3d;
+  font-size: 15px;
+}
+
+.registro-form input[type="text"],
+.registro-form input[type="email"],
+.registro-form input[type="password"] {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  font-size: 16px;
+  box-sizing: border-box;
+}
+
+.boton-registro {
+  width: 100%;
+  background-color: #6a4e37;
+  color: white;
+  padding: 12px;
+  border: none;
+  border-radius: 6px;
+  font-size: 16px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.boton-registro:hover {
+  background-color: #523d2c;
+}
+
+.login-link {
+  text-align: center;
+  margin-top: 20px;
+  font-size: 14px;
+}
+
+.login-link a {
+  color: #6a4e37;
+  text-decoration: none;
+}
+
+.login-link a:hover {
+  text-decoration: underline;
+}
+.volver-tienda {
+  text-align: center;
+  margin-top: 20px;
+}
+
+.boton-volver {
+  display: inline-block;
+  background-color: #ccc;
+  color: #333;
+  padding: 10px 20px;
+  border-radius: 6px;
+  text-decoration: none;
+  font-size: 14px;
+  transition: background-color 0.3s ease;
+}
+
+.boton-volver:hover {
+  background-color: #bbb;
+}

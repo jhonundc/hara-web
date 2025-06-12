@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Quiénes Somos</title>
+  <style>
+    body {
+      font-family: 'Segoe UI', sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: #fff;
+      color: #333;
+    }
+
+    .hero {
+      background-color: #194569;
+      padding: 60px 20px 20px;
+      text-align: center;
+      color: white;
+    }
+
+    .hero h1 {
+      font-size: 48px;
+      margin: 0;
+    }
+
+    .container {
+      max-width: 1100px;
+      margin: 40px auto;
+      padding: 0 20px;
+      text-align: center;
+      line-height: 1.7;
+    }
+
+    .seccion {
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+      justify-content: center;
+      margin: 60px 0;
+      gap: 30px;
+    }
+
+    .seccion img {
+      width: 100%;
+      max-width: 400px;
+      border-radius: 12px;
+    }
+
+    .seccion .texto {
+      max-width: 500px;
+      text-align: justify;
+    }
+
+    .seccion h2 {
+      color: #194569;
+      text-align: center;
+      margin-bottom: 10px;
+    }
+
+    .reverso {
+      flex-direction: row-reverse;
+    }
+
+    .boton-volver {
+      display: inline-block;
+      margin: 40px auto 20px;
+      padding: 10px 20px;
+      background-color: #194569;
+      color: white;
+      text-decoration: none;
+      border-radius: 6px;
+      font-weight: bold;
+      transition: background-color 0.3s ease;
+    }
+
+    .boton-volver:hover {
+      background-color: #12334e;
+    }
+
+    @media (max-width: 768px) {
+      .seccion {
+        flex-direction: column !important;
+      }
+
+      .seccion img, .seccion .texto {
+        max-width: 90%;
+        text-align: center;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <div class="hero">
+    <h1>Quiénes Somos</h1>
+  </div>
+
+  <div class="container">
+    <p>
+      Somos HARA Artesanal, un emprendimiento peruano creado en el año 2020 por una mujer emprendedora, con la visión de ofrecer productos únicos y hechos a mano. Nos especializamos en la elaboración de jabones y velas artesanales, diseñados con dedicación, ingredientes naturales y un profundo respeto por el bienestar y el medio ambiente.
+
+Nuestro compromiso es brindar experiencias sensoriales que promuevan el autocuidado, el equilibrio y la armonía en cada rincón del hogar. Creemos que pequeños detalles pueden transformar grandes momentos. Con cada creación, buscamos transmitir amor, calidez y autenticidad.
+
+HARA no es solo una marca, es una forma de vivir lo natural, lo artesanal y lo hecho con el corazón.
+    </p>
+
+    <div class="seccion">
+      <img src="../imagenes/vision.jpg" alt="Visión">
+      <div class="texto">
+        <h2>VISIÓN</h2>
+        <p>
+          Ser reconocida como una marca referente en el mercado artesanal peruano, destacando por la calidad, autenticidad y calidez de nuestros jabones y velas artesanales.
+
+Aspiramos a expandirnos manteniendo siempre nuestra esencia natural, promoviendo el bienestar emocional y físico de nuestros clientes, y creando experiencias memorables a través de cada producto.
+
+Queremos llegar a más hogares, inspirando a las personas a reconectarse con lo simple, lo natural y lo hecho con amor.
+        </p>
+      </div>
+    </div>
+
+    <div class="seccion reverso">
+      <img src="../imagenes/mision.jpg" alt="Misión">
+      <div class="texto">
+        <h2>MISIÓN</h2>
+        <p>
+          Brindar productos artesanales de alta calidad, elaborados con ingredientes naturales y procesos responsables, que promuevan el cuidado personal, el bienestar y el equilibrio emocional.
+
+En HARA Artesanal, nos comprometemos a ofrecer jabones y velas hechos a mano que inspiren a cada persona a dedicarse un momento de calma, amor propio y conexión consigo misma.
+
+Nuestra misión es generar experiencias sensoriales únicas que reflejen autenticidad, cercanía y el valor de lo hecho con dedicación y corazón.
+        </p>
+      </div>
+    </div>
+<div class="volver-btn">
+    <a href="../index.php">Volver al inicio</a>
+</div>
+  </div>
+
+</body>
+</html>

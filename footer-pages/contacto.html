@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Contáctanos</title>
+  <style>
+    body {
+      font-family: 'Segoe UI', sans-serif;
+      background-color: #f8f8f8;
+      margin: 0;
+      padding: 0;
+    }
+
+    .container-contacto {
+      max-width: 700px;
+      margin: 60px auto;
+      padding: 30px;
+      background-color: white;
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+      border-radius: 12px;
+    }
+
+    .container-contacto h2 {
+      text-align: center;
+      color: #194569;
+      margin-bottom: 30px;
+    }
+
+    form {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 20px;
+    }
+
+    input[type="text"],
+    input[type="email"],
+    textarea {
+      width: 100%;
+      padding: 12px;
+      border: 1px solid #ccc;
+      border-radius: 8px;
+      font-size: 16px;
+    }
+
+    textarea {
+      resize: vertical;
+      height: 150px;
+    }
+
+    button[type="submit"] {
+      width: 100%;
+      padding: 12px;
+      background-color: #194569;
+      color: white;
+      font-size: 16px;
+      border: none;
+      border-radius: 8px;
+      cursor: pointer;
+      transition: background-color 0.3s ease;
+    }
+
+    button[type="submit"]:hover {
+      background-color: #12334e;
+    }
+
+    @media (min-width: 768px) {
+      input[type="text"],
+      input[type="email"] {
+        width: 48%;
+      }
+    }
+
+    .volver-btn {
+      text-align: center;
+      margin-top: 20px;
+    }
+
+    .volver-btn a {
+      display: inline-block;
+      padding: 10px 20px;
+      background-color: #194569;
+      color: white;
+      text-decoration: none;
+      border-radius: 6px;
+      font-weight: bold;
+      transition: background-color 0.3s ease;
+    }
+
+    .volver-btn a:hover {
+      background-color: #12334e;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="container-contacto">
+    <h2>Contáctanos</h2>
+    <form action="enviar.php" method="POST">
+      <input type="text" name="nombre" placeholder="Nombre" required>
+      <input type="email" name="correo" placeholder="Correo Electrónico" required>
+      <input type="text" name="telefono" placeholder="Teléfono">
+      <textarea name="mensaje" placeholder="Escribe tu mensaje aquí..." required></textarea>
+      <button type="submit">Enviar</button>
+    </form>
+
+    <div class="volver-btn">
+      <a href="../index.php">Volver al inicio</a>
+    </div>
+  </div>
+
+</body>
+</html>

@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Preguntas Frecuentes</title>
+  <style>
+    body {
+      font-family: 'Segoe UI', sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: #fff;
+      color: #333;
+    }
+
+    .hero {
+      background-color: #194569;
+      padding: 60px 20px 20px;
+      text-align: center;
+      color: white;
+    }
+
+    .hero h1 {
+      font-size: 48px;
+      margin: 0;
+    }
+
+    .container {
+      max-width: 1200px;
+      margin: 40px auto;
+      padding: 0 20px;
+    }
+
+    .faq-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 30px;
+    }
+
+    .faq-item {
+      border-bottom: 1px solid #ccc;
+    }
+
+    .faq-question {
+      background: none;
+      border: none;
+      text-align: left;
+      width: 100%;
+      font-size: 18px;
+      font-weight: bold;
+      padding: 15px 10px;
+      cursor: pointer;
+      color: #194569;
+    }
+
+    .faq-answer {
+      display: none;
+      padding: 0 10px 15px;
+      font-size: 16px;
+      color: #555;
+    }
+
+    .volver-btn {
+      text-align: center;
+      margin: 40px auto 20px;
+    }
+
+    .volver-btn a {
+      padding: 10px 20px;
+      background-color: #194569;
+      color: white;
+      text-decoration: none;
+      border-radius: 6px;
+      font-weight: bold;
+      transition: background-color 0.3s ease;
+    }
+
+    .volver-btn a:hover {
+      background-color: #12334e;
+    }
+
+    @media (max-width: 768px) {
+      .faq-grid {
+        grid-template-columns: 1fr;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <div class="hero">
+    <h1>Preguntas Frecuentes</h1>
+  </div>
+
+  <div class="container">
+    <div class="faq-grid">
+
+      <!-- Primera columna -->
+      <div class="faq-item">
+        <button class="faq-question">1. ¿Debo registrarme para realizar una compra en Kallma.com?</button>
+        <div class="faq-answer">No es necesario registrarte, pero hacerlo te permite acceder a beneficios y hacer seguimiento de tus pedidos.</div>
+      </div>
+
+      <div class="faq-item">
+        <button class="faq-question">2. ¿Los descuentos de Kallma.com son los mismos que en tiendas físicas?</button>
+        <div class="faq-answer">No necesariamente. Algunas promociones pueden ser exclusivas para la tienda online o para tiendas físicas.</div>
+      </div>
+
+      <div class="faq-item">
+        <button class="faq-question">3. ¿Comprar en Kallma.com es seguro?</button>
+        <div class="faq-answer">Sí, utilizamos plataformas seguras de pago y protegemos tus datos personales con cifrado.</div>
+      </div>
+
+      <div class="faq-item">
+        <button class="faq-question">4. ¿Puedo realizar el pago de mi pedido en cuotas?</button>
+        <div class="faq-answer">Sí, dependiendo del método de pago y tu banco, puedes acceder a opciones de cuotas sin intereses.</div>
+      </div>
+
+      <div class="faq-item">
+        <button class="faq-question">5. ¿Qué métodos de pago aceptan?</button>
+        <div class="faq-answer">Aceptamos tarjetas de crédito y débito (Visa, MasterCard), transferencias bancarias y algunas billeteras digitales.</div>
+      </div>
+
+      <div class="faq-item">
+        <button class="faq-question">6. ¿El envío es gratis o está incluido?</button>
+        <div class="faq-answer">Ofrecemos envío gratuito para compras mayores a un monto mínimo. También puedes calcular el envío durante el checkout.</div>
+      </div>
+
+      <!-- Segunda columna -->
+      <div class="faq-item">
+        <button class="faq-question">7. ¿Qué hacer si mi pedido no llega como lo esperaba?</button>
+        <div class="faq-answer">Contáctanos dentro de las 24 horas de recibido el pedido y adjunta fotos. Evaluaremos el caso para darte una solución.</div>
+      </div>
+
+      <div class="faq-item">
+        <button class="faq-question">8. ¿Qué hacer y cómo saber si mi pago ha sido rechazado?</button>
+        <div class="faq-answer">Te notificaremos por correo si hay un problema con tu pago. También puedes revisar tu bandeja de spam o contactar a tu banco.</div>
+      </div>
+
+      <div class="faq-item">
+        <button class="faq-question">9. ¿En cuánto tiempo llega mi pedido?</button>
+        <div class="faq-answer">Los tiempos varían según tu ubicación. En Lima puede demorar entre 1 a 3 días útiles y en provincias de 3 a 7 días útiles.</div>
+      </div>
+
+      <div class="faq-item">
+        <button class="faq-question">10. ¿Cómo llega mi pedido de Kallma?</button>
+        <div class="faq-answer">Empacado con cuidado en materiales reciclables, y protegido para evitar daños durante el transporte.</div>
+      </div>
+
+      <div class="faq-item">
+        <button class="faq-question">11. ¿Cuál es el horario de entrega de Kallma.com?</button>
+        <div class="faq-answer">Las entregas se realizan de lunes a sábado entre las 9:00 a.m. y 6:00 p.m., según disponibilidad del courier.</div>
+      </div>
+
+      <div class="faq-item">
+        <button class="faq-question">12. ¿Tienes más preguntas?</button>
+        <div class="faq-answer">Puedes escribirnos por WhatsApp, redes sociales o al correo contacto@kallma.com. Estaremos felices de ayudarte.</div>
+      </div>
+
+    </div>
+
+    <div class="volver-btn">
+      <a href="../index.php">Volver al inicio</a>
+    </div>
+  </div>
+
+  <script>
+    const preguntas = document.querySelectorAll('.faq-question');
+    preguntas.forEach(pregunta => {
+      pregunta.addEventListener('click', () => {
+        const respuesta = pregunta.nextElementSibling;
+        respuesta.style.display = respuesta.style.display === 'block' ? 'none' : 'block';
+      });
+    });
+  </script>
+
+</body>
+</html>

@@ -124,6 +124,8 @@ $filtro = isset($_GET['tipo']) ? $_GET['tipo'] : '';
   <nav>
     <a href="index.php">Inicio</a>
     <a href="carrito.php">Carrito</a>
+    <a href="reseñas/formulario.php">Dejar Reseña</a>
+
     <?php if (isset($_SESSION['usuario_id'])): ?>
       <span>Hola, <?php echo $_SESSION['usuario_nombre']; ?></span>
       <a href="auth/logout.php">Cerrar sesión</a>
@@ -131,6 +133,7 @@ $filtro = isset($_GET['tipo']) ? $_GET['tipo'] : '';
       <a href="auth/login.php">Iniciar sesión</a>
     <?php endif; ?>
   </nav>
+
   <?php if (isset($_GET['exito']) && $_GET['exito'] == '1'): ?>
   <div style="background-color: #d4edda; color: #155724; padding: 15px; border-radius: 8px; margin: 20px auto; max-width: 600px; text-align: center; border: 1px solid #c3e6cb;">
     ¡Tu mensaje fue enviado exitosamente!
@@ -212,6 +215,7 @@ if ($resultado && $resultado->num_rows > 0) {
       <ul style="list-style:none; padding:0;">
         <li><a href="footer-pages/quienes-somos.html" style="color:#fff; text-decoration:none;">Quiénes Somos</a></li>
         <li><a href="footer-pages/nuestros-productos.html" style="color:#fff; text-decoration:none;">Nuestros Productos</a></li>
+        <li><a href="reseñas/mostrar_reseñas.php" style="color:#fff; text-decoration:none;">Reseñas</a></li>
       </ul>
     </div>
 

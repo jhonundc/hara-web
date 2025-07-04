@@ -1,0 +1,6 @@
+🕒 Reporte generado el 2025-07-04 19:36:36
+Ventas totales: 160 unidades
+
+Detalle por producto:
+- jabones: 100 unidades
+- velas: 60 unidades

@@ -1,0 +1,271 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Contáctanos</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <style>
+    body {
+      font-family: 'Segoe UI', Arial, sans-serif;
+      background: linear-gradient(120deg, #e6f7ef 60%, #f8f8f8 100%);
+      margin: 0;
+      padding: 0;
+      min-height: 100vh;
+    }
+
+    .container-contacto {
+      max-width: 500px;
+      margin: 60px auto;
+      padding: 36px 32px 28px 32px;
+      background: #fff;
+      box-shadow: 0 6px 24px rgba(59,183,126,0.10), 0 1.5px 6px #3bb77e22;
+      border-radius: 18px;
+      position: relative;
+    }
+
+    .container-contacto h2 {
+      text-align: center;
+      color: #3bb77e;
+      margin-bottom: 18px;
+      font-size: 2em;
+      letter-spacing: 1px;
+    }
+
+    .contacto-desc {
+      text-align: center;
+      color: #555;
+      margin-bottom: 28px;
+      font-size: 1.08em;
+    }
+
+    form {
+      display: flex;
+      flex-direction: column;
+      gap: 18px;
+    }
+
+    .form-row {
+      display: flex;
+      gap: 16px;
+      flex-wrap: wrap;
+    }
+
+    .form-row input {
+      flex: 1 1 48%;
+    }
+
+    input[type="text"],
+    input[type="email"],
+    textarea {
+      width: 100%;
+      padding: 12px 14px;
+      border: 1.5px solid #cceee0;
+      border-radius: 8px;
+      font-size: 1em;
+      background: #f7f7f7;
+      transition: border-color 0.2s;
+      outline: none;
+    }
+
+    input[type="text"]:focus,
+    input[type="email"]:focus,
+    textarea:focus {
+      border-color: #3bb77e;
+      background: #e6f7ef;
+    }
+
+    textarea {
+      resize: vertical;
+      min-height: 120px;
+      max-height: 260px;
+    }
+
+    .form-group {
+      display: flex;
+      flex-direction: column;
+      gap: 6px;
+    }
+
+    label {
+      font-size: 0.98em;
+      color: #267a4a;
+      margin-bottom: 2px;
+      font-weight: 500;
+    }
+
+    .required {
+      color: #e74c3c;
+      font-weight: bold;
+      margin-left: 2px;
+    }
+
+    .form-actions {
+      margin-top: 10px;
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+    }
+
+    button[type="submit"] {
+      width: 100%;
+      padding: 13px;
+      background: linear-gradient(90deg, #3bb77e 80%, #267a4a 100%);
+      color: #fff;
+      font-size: 1.1em;
+      border: none;
+      border-radius: 8px;
+      cursor: pointer;
+      font-weight: bold;
+      letter-spacing: 1px;
+      box-shadow: 0 2px 8px #3bb77e22;
+      transition: background 0.2s;
+    }
+
+    button[type="submit"]:hover {
+      background: linear-gradient(90deg, #267a4a 80%, #3bb77e 100%);
+    }
+
+    .volver-btn {
+      text-align: center;
+      margin-top: 18px;
+    }
+
+    .volver-btn a {
+      display: inline-block;
+      padding: 10px 22px;
+      background: #3bb77e;
+      color: #fff;
+      text-decoration: none;
+      border-radius: 6px;
+      font-weight: bold;
+      transition: background 0.2s;
+      font-size: 1em;
+    }
+
+    .volver-btn a:hover {
+      background: #267a4a;
+    }
+
+    .info-extra {
+      margin-top: 30px;
+      text-align: center;
+      color: #267a4a;
+      font-size: 1.05em;
+    }
+
+    .info-extra a {
+      color: #3bb77e;
+      text-decoration: underline;
+      transition: color 0.2s;
+    }
+
+    .info-extra a:hover {
+      color: #194569;
+    }
+
+    .social-contacto {
+      margin-top: 18px;
+      text-align: center;
+    }
+
+    .social-contacto a {
+      display: inline-block;
+      margin: 0 10px;
+      transition: transform 0.2s;
+    }
+
+    .social-contacto img {
+      width: 36px;
+      vertical-align: middle;
+    }
+
+    .social-contacto a:hover {
+      transform: scale(1.12);
+    }
+
+    @media (max-width: 600px) {
+      .container-contacto {
+        padding: 18px 6vw 18px 6vw;
+      }
+
+      .form-row {
+        flex-direction: column;
+        gap: 0;
+      }
+
+      .form-row input {
+        width: 100%;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="container-contacto">
+    <h2>Contáctanos</h2>
+    <div class="contacto-desc">
+      ¿Tienes dudas, sugerencias o quieres cotizar un pedido especial?<br>
+      Completa el formulario y te responderemos pronto.
+    </div>
+    <form id="formContacto" action="enviar.php" method="POST" autocomplete="on">
+      <div class="form-row">
+        <div class="form-group">
+          <label for="nombre">Nombre <span class="required">*</span></label>
+          <input type="text" name="nombre" id="nombre" placeholder="Tu nombre" required maxlength="60">
+        </div>
+        <div class="form-group">
+          <label for="correo">Correo Electrónico <span class="required">*</span></label>
+          <input type="email" name="correo" id="correo" placeholder="ejemplo@correo.com" required maxlength="80">
+        </div>
+      </div>
+      <div class="form-group">
+        <label for="telefono">Teléfono</label>
+        <input type="text" name="telefono" id="telefono" placeholder="Opcional: WhatsApp o móvil" maxlength="20" pattern="[0-9+ ]*">
+      </div>
+      <div class="form-group">
+        <label for="mensaje">Mensaje <span class="required">*</span></label>
+        <textarea name="mensaje" id="mensaje" placeholder="Escribe tu mensaje aquí..." required maxlength="600"></textarea>
+      </div>
+      <div class="form-actions">
+        <button type="submit">Enviar Mensaje</button>
+      </div>
+    </form>
+    <div class="social-contacto">
+      <a href="https://wa.me/51945666911?text=Hola%20Hará%2C%20tengo%20una%20consulta" target="_blank" title="WhatsApp">
+        <img src="https://cdn-icons-png.flaticon.com/512/733/733585.png" alt="WhatsApp">
+      </a>
+      <a href="https://www.instagram.com/hara_art11?igsh=b3dwcWp6bG1zaTNr" target="_blank" title="Instagram">
+        <img src="https://cdn-icons-png.flaticon.com/512/2111/2111463.png" alt="Instagram">
+      </a>
+    </div>
+    <div class="info-extra">
+      También puedes escribirnos a <a href="mailto:hara.artesanal@gmail.com">hara.artesanal@gmail.com</a>
+    </div>
+    <div class="volver-btn">
+      <a href="../index.php">Volver al inicio</a>
+    </div>
+  </div>
+  <script>
+    // Validación extra en el frontend
+    document.getElementById('formContacto').addEventListener('submit', function(e) {
+      const nombre = document.getElementById('nombre').value.trim();
+      const correo = document.getElementById('correo').value.trim();
+      const mensaje = document.getElementById('mensaje').value.trim();
+      if (nombre.length < 2) {
+        alert('Por favor, ingresa un nombre válido.');
+        e.preventDefault();
+        return false;
+      }
+      if (!/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(correo)) {
+        alert('Por favor, ingresa un correo electrónico válido.');
+        e.preventDefault();
+        return false;
+      }
+      if (mensaje.length < 10) {
+        alert('El mensaje debe tener al menos 10 caracteres.');
+        e.preventDefault();
+        return false;
+      }
+    });
+  </script>
+</body>
+</html>

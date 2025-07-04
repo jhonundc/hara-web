@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Política de Cambios</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  <style>
+    :root {
+      --verde-principal: #3bb77e;
+      --verde-oscuro: #267a4a;
+      --verde-suave: #7ed6a7;
+      --blanco: #fff;
+      --gris-fondo: #f7f7f7;
+      --gris-borde: #e0e0e0;
+      --texto: #222;
+    }
+    body {
+      font-family: 'Segoe UI', Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      background: var(--gris-fondo);
+      color: var(--texto);
+    }
+    .hero {
+      background: linear-gradient(120deg, var(--verde-principal) 70%, var(--verde-suave) 100%);
+      padding: 70px 20px 40px;
+      text-align: center;
+      color: var(--blanco);
+      box-shadow: 0 2px 12px #0002;
+      border-bottom-left-radius: 32px;
+      border-bottom-right-radius: 32px;
+    }
+    .hero h1 {
+      font-size: 2.5em;
+      margin: 0;
+      letter-spacing: 2px;
+      font-weight: bold;
+      color: var(--blanco);
+      text-shadow: 0 2px 8px #0002;
+    }
+    .container {
+      max-width: 1000px;
+      margin: 50px auto 0 auto;
+      padding: 0 24px 40px 24px;
+      background: var(--blanco);
+      border-radius: 18px;
+      box-shadow: 0 2px 16px #e0e0e0;
+      line-height: 1.8;
+    }
+    .seccion {
+      margin-bottom: 30px;
+      background: var(--gris-fondo);
+      border-radius: 12px;
+      box-shadow: 0 2px 8px #e0e0e0;
+      padding: 24px 22px 18px 22px;
+      border-left: 5px solid var(--verde-principal);
+    }
+    .seccion h2 {
+      color: var(--verde-principal);
+      margin-bottom: 10px;
+      font-size: 1.18em;
+      border-bottom: 2px solid var(--verde-principal);
+      padding-bottom: 5px;
+      letter-spacing: 1px;
+      font-weight: bold;
+    }
+    .seccion p {
+      margin: 0;
+      text-align: justify;
+      font-size: 1.08em;
+    }
+    .nota {
+      background: #e6f7ef;
+      color: var(--verde-oscuro);
+      border-left: 4px solid var(--verde-oscuro);
+      border-radius: 8px;
+      padding: 16px 18px;
+      margin-top: 18px;
+      font-size: 1.05em;
+      box-shadow: 0 1px 6px #e0e0e0;
+    }
+    .volver-btn {
+      text-align: center;
+      margin-top: 40px;
+    }
+    .volver-btn a {
+      display: inline-block;
+      padding: 12px 32px;
+      background: var(--verde-principal);
+      color: var(--blanco);
+      text-decoration: none;
+      border-radius: 8px;
+      font-weight: bold;
+      font-size: 1.08em;
+      box-shadow: 0 2px 8px #0001;
+      transition: background .2s, transform .2s;
+      letter-spacing: 1px;
+    }
+    .volver-btn a:hover {
+      background: var(--verde-oscuro);
+      transform: translateY(-2px) scale(1.04);
+    }
+    @media (max-width: 768px) {
+      .container {
+        padding: 0 10px 30px 10px;
+      }
+      .seccion {
+        padding: 18px 8px 14px 12px;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <div class="hero">
+    <h1><i class="fas fa-exchange-alt"></i> Política de Cambios</h1>
+  </div>
+
+  <div class="container">
+
+    <div class="seccion">
+      <h2><i class="fas fa-box"></i> I. CONDICIONES DEL PRODUCTO</h2>
+      <p>El producto debe estar en su empaque, no mostrar señales de uso y en buen estado. Caso contrario no será reconocido para cambio.</p>
+    </div>
+
+    <div class="seccion">
+      <h2><i class="fas fa-calendar-alt"></i> II. PLAZOS PARA REALIZAR LOS CAMBIOS</h2>
+      <p>Tienes máximo 7 días para realizar el trámite una vez realizada la compra.</p>
+    </div>
+
+    <div class="seccion">
+      <h2><i class="fas fa-id-card"></i> III. DOCUMENTOS A PRESENTAR</h2>
+      <p>Debes presentar un documento de identidad (DNI o Pasaporte) y tu comprobante de pago (físico o digital).</p>
+    </div>
+
+    <div class="nota">
+      <i class="fas fa-info-circle"></i> <strong>Nota:</strong> No realizamos devolución de dinero, solo emitimos nota de crédito teniendo en cuenta los puntos antes mencionados.
+    </div>
+
+    <div class="volver-btn">
+      <a href="../index.php"><i class="fas fa-arrow-left"></i> Volver al inicio</a>
+    </div>
+
+  </div>
+
+</body>
+</html>

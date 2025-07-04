@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Nuestros Productos</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  <style>
+    :root {
+      --verde-principal: #3bb77e;
+      --verde-oscuro: #267a4a;
+      --verde-suave: #7ed6a7;
+      --blanco: #fff;
+      --gris-fondo: #f7f7f7;
+      --gris-borde: #e0e0e0;
+      --texto: #222;
+    }
+    body {
+      font-family: 'Segoe UI', Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      background: var(--gris-fondo);
+      color: var(--texto);
+    }
+    .hero {
+      background: linear-gradient(120deg, var(--verde-principal) 70%, var(--verde-suave) 100%);
+      padding: 70px 20px 40px;
+      text-align: center;
+      color: var(--blanco);
+      box-shadow: 0 2px 12px #0002;
+      border-bottom-left-radius: 32px;
+      border-bottom-right-radius: 32px;
+    }
+    .hero h1 {
+      font-size: 2.5em;
+      margin: 0;
+      letter-spacing: 2px;
+      font-weight: bold;
+      color: var(--blanco);
+      text-shadow: 0 2px 8px #0002;
+    }
+    .productos-section {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      align-items: flex-start;
+      padding: 50px 20px;
+      gap: 50px;
+      max-width: 1200px;
+      margin: 40px auto 0 auto;
+      background: var(--blanco);
+      border-radius: 18px;
+      box-shadow: 0 2px 16px #e0e0e0;
+    }
+    .productos-texto {
+      flex: 1;
+      min-width: 320px;
+      font-size: 1.13em;
+      line-height: 1.8;
+      color: #222;
+      padding: 0 10px;
+    }
+    .productos-texto ul {
+      list-style: none;
+      padding: 0;
+      margin: 0;
+    }
+    .productos-texto ul li {
+      margin-bottom: 32px;
+      padding-left: 0;
+      position: relative;
+      background: var(--gris-fondo);
+      border-radius: 10px;
+      box-shadow: 0 2px 8px #e0e0e0;
+      padding: 22px 22px 22px 54px;
+      font-size: 1.08em;
+    }
+    .productos-texto ul li:before {
+      content: "\f058";
+      font-family: "Font Awesome 6 Free";
+      font-weight: 900;
+      color: var(--verde-principal);
+      position: absolute;
+      left: 18px;
+      top: 28px;
+      font-size: 1.3em;
+    }
+    .productos-imagen {
+      flex: 1;
+      min-width: 320px;
+      text-align: center;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+    .productos-imagen img {
+      max-width: 100%;
+      border-radius: 14px;
+      box-shadow: 0 4px 18px #0001;
+      border: 2px solid var(--verde-principal);
+      background: #fff;
+      transition: transform .2s;
+    }
+    .productos-imagen img:hover {
+      transform: scale(1.03);
+      box-shadow: 0 8px 32px #3bb77e33;
+    }
+    .volver-btn {
+      text-align: center;
+      margin: 50px 0 0 0;
+    }
+    .volver-btn a {
+      display: inline-block;
+      padding: 12px 32px;
+      background: var(--verde-principal);
+      color: var(--blanco);
+      text-decoration: none;
+      border-radius: 8px;
+      font-weight: bold;
+      font-size: 1.08em;
+      box-shadow: 0 2px 8px #0001;
+      transition: background .2s, transform .2s;
+      letter-spacing: 1px;
+    }
+    .volver-btn a:hover {
+      background: var(--verde-oscuro);
+      transform: translateY(-2px) scale(1.04);
+    }
+    @media (max-width: 900px) {
+      .productos-section {
+        flex-direction: column;
+        padding: 24px 8px;
+        gap: 30px;
+      }
+      .productos-imagen, .productos-texto {
+        min-width: 0;
+        width: 100%;
+        text-align: center;
+      }
+      .productos-imagen img {
+        max-width: 98%;
+      }
+    }
+  </style>
+</head>
+<body>
+<div class="hero">
+  <h1><i class="fas fa-leaf"></i> Nuestros Productos</h1>
+</div>
+
+<div class="productos-section">
+  <div class="productos-texto">
+      <ul>
+        <li>
+          <b>Calidad artesanal y natural:</b><br>
+          En HARA nos dedicamos a la elaboración cuidadosa de jabones y velas artesanales, usando ingredientes 100% naturales y seleccionados con esmero. Nuestros productos están libres de parabenos, sulfatos, siliconas y otros químicos dañinos, lo que los hace ideales para todo tipo de piel, incluso las más sensibles. Cada producto es una muestra de amor por lo natural y lo hecho a mano, con fragancias suaves y texturas que aportan bienestar.
+        </li>
+        <li>
+          <b>Compromiso con el medio ambiente:</b><br>
+          Cuidar el planeta forma parte esencial de nuestra filosofía. Por eso, todos nuestros envases son reutilizables y elaborados con al menos un 15% de materiales reciclados. Además, promovemos una cultura de reciclaje entre nuestros clientes: quienes devuelvan sus envases vacíos reciben un 15% de descuento en su siguiente compra. Es nuestra forma de agradecer tu compromiso con el entorno y fomentar un consumo más sostenible.
+        </li>
+        <li>
+          <b>Cero crueldad animal:</b><br>
+          En HARA rechazamos cualquier forma de maltrato animal. Nuestros productos no se testean en animales y están formulados únicamente con ingredientes aprobados para el uso humano. Además, nuestras tiendas y puntos de venta son pet friendly, porque creemos que nuestros amigos peludos también merecen ser parte de un entorno amable y acogedor.
+        </li>
+        <li>
+          <b>Empoderamiento femenino:</b><br>
+          Somos una marca fundada por una mujer peruana con una visión clara: crear productos que no solo cuiden, sino que también inspiren. En HARA apostamos por romper los estereotipos de género y brindar oportunidades a mujeres emprendedoras, artesanas y creativas que son parte esencial de nuestro equipo. Cada producto refleja fuerza, independencia y pasión femenina.
+        </li>
+        <li>
+          <b>Producción 100% peruana:</b><br>
+          Nos enorgullece ser una empresa totalmente peruana. Desde la conceptualización hasta la producción, todo lo hacemos en el Perú, contribuyendo a la economía local y generando empleo en diversas comunidades. Seleccionamos los mejores insumos del país y del extranjero para asegurar que cada jabón y cada vela cumpla con los más altos estándares de calidad y sostenibilidad.
+        </li>
+      </ul>
+    </div>
+    <div class="productos-imagen">
+      <img src="../imagenes/productos.jpg" alt="Nuestros productos">
+    </div>
+  </div>
+
+  <div class="volver-btn">
+    <a href="../index.php"><i class="fas fa-arrow-left"></i> Volver al inicio</a>
+  </div>
+
+</body>
+</html>

@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Preguntas Frecuentes</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  <style>
+    :root {
+      --verde-principal: #3bb77e;
+      --verde-oscuro: #267a4a;
+      --verde-suave: #7ed6a7;
+      --blanco: #fff;
+      --gris-fondo: #f7f7f7;
+      --gris-borde: #e0e0e0;
+      --texto: #222;
+    }
+    body {
+      font-family: 'Segoe UI', Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      background: var(--gris-fondo);
+      color: var(--texto);
+    }
+    .hero {
+      background: linear-gradient(120deg, var(--verde-principal) 70%, var(--verde-suave) 100%);
+      padding: 70px 20px 40px;
+      text-align: center;
+      color: var(--blanco);
+      box-shadow: 0 2px 12px #0002;
+      border-bottom-left-radius: 32px;
+      border-bottom-right-radius: 32px;
+    }
+    .hero h1 {
+      font-size: 2.5em;
+      margin: 0;
+      letter-spacing: 2px;
+      font-weight: bold;
+      color: var(--blanco);
+      text-shadow: 0 2px 8px #0002;
+    }
+    .container {
+      max-width: 1100px;
+      margin: 50px auto 0 auto;
+      padding: 0 24px 40px 24px;
+      background: var(--blanco);
+      border-radius: 18px;
+      box-shadow: 0 2px 16px #e0e0e0;
+    }
+    .faq-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 32px;
+      margin-top: 40px;
+    }
+    .faq-item {
+      background: var(--gris-fondo);
+      border-radius: 12px;
+      box-shadow: 0 2px 8px #e0e0e0;
+      padding: 0;
+      overflow: hidden;
+      border-left: 5px solid var(--verde-principal);
+      transition: box-shadow .2s;
+    }
+    .faq-item:hover {
+      box-shadow: 0 6px 24px #b7e4c7;
+    }
+    .faq-question {
+      background: none;
+      border: none;
+      text-align: left;
+      width: 100%;
+      font-size: 1.13em;
+      font-weight: bold;
+      padding: 18px 18px 16px 48px;
+      cursor: pointer;
+      color: var(--verde-principal);
+      position: relative;
+      outline: none;
+      transition: background .2s;
+    }
+    .faq-question::before {
+      content: "\f059";
+      font-family: "Font Awesome 6 Free";
+      font-weight: 900;
+      color: var(--verde-principal);
+      position: absolute;
+      left: 18px;
+      top: 18px;
+      font-size: 1.2em;
+    }
+    .faq-question.active {
+      color: var(--verde-oscuro);
+      background: #e6f7ef;
+    }
+    .faq-answer {
+      display: none;
+      padding: 0 18px 18px 48px;
+      font-size: 1.05em;
+      color: #444;
+      background: transparent;
+      border-left: 2px solid #7ed6a7;
+      animation: fadeIn .4s;
+    }
+    .faq-answer.open {
+      display: block;
+    }
+    @keyframes fadeIn {
+      from { opacity: 0; transform: translateY(-10px);}
+      to { opacity: 1; transform: translateY(0);}
+    }
+    .volver-btn {
+      text-align: center;
+      margin: 50px 0 0 0;
+    }
+    .volver-btn a {
+      display: inline-block;
+      padding: 12px 32px;
+      background: var(--verde-principal);
+      color: var(--blanco);
+      text-decoration: none;
+      border-radius: 8px;
+      font-weight: bold;
+      font-size: 1.08em;
+      box-shadow: 0 2px 8px #0001;
+      transition: background .2s, transform .2s;
+      letter-spacing: 1px;
+    }
+    .volver-btn a:hover {
+      background: var(--verde-oscuro);
+      transform: translateY(-2px) scale(1.04);
+    }
+    @media (max-width: 900px) {
+      .container {
+        padding: 0 8px 30px 8px;
+      }
+      .faq-grid {
+        grid-template-columns: 1fr;
+        gap: 18px;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <div class="hero">
+    <h1><i class="fas fa-question-circle"></i> Preguntas Frecuentes</h1>
+  </div>
+
+  <div class="container">
+    <div class="faq-grid">
+
+      <!-- Primera columna -->
+      <div class="faq-item">
+        <button class="faq-question">1. ¿Debo registrarme para realizar una compra en HARA?</button>
+        <div class="faq-answer">No es necesario registrarte, pero hacerlo te permite acceder a beneficios y hacer seguimiento de tus pedidos.</div>
+      </div>
+
+      <div class="faq-item">
+        <button class="faq-question">2. ¿Los descuentos online son los mismos que en tiendas físicas?</button>
+        <div class="faq-answer">No necesariamente. Algunas promociones pueden ser exclusivas para la tienda online o para tiendas físicas.</div>
+      </div>
+
+      <div class="faq-item">
+        <button class="faq-question">3. ¿Comprar en HARA es seguro?</button>
+        <div class="faq-answer">Sí, utilizamos plataformas seguras de pago y protegemos tus datos personales con cifrado.</div>
+      </div>
+
+      <div class="faq-item">
+        <button class="faq-question">4. ¿Puedo realizar el pago de mi pedido en cuotas?</button>
+        <div class="faq-answer">Sí, dependiendo del método de pago y tu banco, puedes acceder a opciones de cuotas sin intereses.</div>
+      </div>
+
+      <div class="faq-item">
+        <button class="faq-question">5. ¿Qué métodos de pago aceptan?</button>
+        <div class="faq-answer">Aceptamos tarjetas de crédito y débito (Visa, MasterCard), transferencias bancarias y algunas billeteras digitales.</div>
+      </div>
+
+      <div class="faq-item">
+        <button class="faq-question">6. ¿El envío es gratis o está incluido?</button>
+        <div class="faq-answer">Ofrecemos envío gratuito para compras mayores a un monto mínimo. También puedes calcular el envío durante el checkout.</div>
+      </div>
+
+      <!-- Segunda columna -->
+      <div class="faq-item">
+        <button class="faq-question">7. ¿Qué hacer si mi pedido no llega como lo esperaba?</button>
+        <div class="faq-answer">Contáctanos dentro de las 24 horas de recibido el pedido y adjunta fotos. Evaluaremos el caso para darte una solución.</div>
+      </div>
+
+      <div class="faq-item">
+        <button class="faq-question">8. ¿Qué hacer y cómo saber si mi pago ha sido rechazado?</button>
+        <div class="faq-answer">Te notificaremos por correo si hay un problema con tu pago. También puedes revisar tu bandeja de spam o contactar a tu banco.</div>
+      </div>
+
+      <div class="faq-item">
+        <button class="faq-question">9. ¿En cuánto tiempo llega mi pedido?</button>
+        <div class="faq-answer">Los tiempos varían según tu ubicación. En Lima puede demorar entre 1 a 3 días útiles y en provincias de 3 a 7 días útiles.</div>
+      </div>
+
+      <div class="faq-item">
+        <button class="faq-question">10. ¿Cómo llega mi pedido de HARA?</button>
+        <div class="faq-answer">Empacado con cuidado en materiales reciclables, y protegido para evitar daños durante el transporte.</div>
+      </div>
+
+      <div class="faq-item">
+        <button class="faq-question">11. ¿Cuál es el horario de entrega?</button>
+        <div class="faq-answer">Las entregas se realizan de lunes a sábado entre las 9:00 a.m. y 6:00 p.m., según disponibilidad del courier.</div>
+      </div>
+
+      <div class="faq-item">
+        <button class="faq-question">12. ¿Tienes más preguntas?</button>
+        <div class="faq-answer">Puedes escribirnos por WhatsApp, redes sociales o al correo contacto@hara.com. ¡Estaremos felices de ayudarte!</div>
+      </div>
+
+    </div>
+
+    <div class="volver-btn">
+      <a href="../index.php"><i class="fas fa-arrow-left"></i> Volver al inicio</a>
+    </div>
+  </div>
+
+  <script>
+    // Animación de preguntas frecuentes tipo acordeón
+    document.querySelectorAll('.faq-question').forEach(btn => {
+      btn.addEventListener('click', function() {
+        const answer = this.nextElementSibling;
+        const isOpen = answer.classList.contains('open');
+        document.querySelectorAll('.faq-answer').forEach(a => a.classList.remove('open'));
+        document.querySelectorAll('.faq-question').forEach(q => q.classList.remove('active'));
+        if (!isOpen) {
+          answer.classList.add('open');
+          this.classList.add('active');
+        }
+      });
+    });
+  </script>
+
+</body>
+</html>

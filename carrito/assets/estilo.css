@@ -1,0 +1,6 @@
+body{font-family:'Arial',sans-serif;background-color:#f0fff0;color:#333}
+h1{color:#2e7d32}table{width:100%;border-collapse:collapse}
+th,td{padding:12px;border-bottom:1px solid #ccc}
+button,input[type="submit"]{background-color:#2e7d32;color:#fff;border:none;padding:8px 16px;cursor:pointer;border-radius:4px}
+button:hover,input[type="submit"]:hover{background-color:#1b5e20}
+.carrito-container{max-width:800px;margin:auto;padding:20px;background:#fff;border-radius:8px}

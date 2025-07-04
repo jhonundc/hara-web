@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Quiénes Somos</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  <style>
+    :root {
+      --verde-principal: #3bb77e;
+      --verde-oscuro: #267a4a;
+      --verde-suave: #7ed6a7;
+      --blanco: #fff;
+      --gris-fondo: #f7f7f7;
+      --gris-borde: #e0e0e0;
+      --texto: #222;
+    }
+    body {
+      font-family: 'Segoe UI', Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      background: var(--gris-fondo);
+      color: var(--texto);
+    }
+    .hero {
+      background: linear-gradient(120deg, var(--verde-principal) 70%, var(--verde-suave) 100%);
+      padding: 70px 20px 40px;
+      text-align: center;
+      color: var(--blanco);
+      box-shadow: 0 2px 12px #0002;
+      border-bottom-left-radius: 32px;
+      border-bottom-right-radius: 32px;
+    }
+    .hero h1 {
+      font-size: 2.8em;
+      margin: 0;
+      letter-spacing: 2px;
+      font-weight: bold;
+      color: var(--blanco);
+      text-shadow: 0 2px 8px #0002;
+    }
+    .container {
+      max-width: 1100px;
+      margin: 50px auto 0 auto;
+      padding: 0 24px 40px 24px;
+      background: var(--blanco);
+      border-radius: 18px;
+      box-shadow: 0 2px 16px #e0e0e0;
+      line-height: 1.8;
+      position: relative;
+      z-index: 2;
+    }
+    .container > p {
+      font-size: 1.18em;
+      margin: 40px 0 60px 0;
+      text-align: center;
+      color: #333;
+    }
+    .seccion {
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+      justify-content: center;
+      margin: 60px 0;
+      gap: 40px;
+      background: var(--gris-fondo);
+      border-radius: 16px;
+      box-shadow: 0 2px 8px #e0e0e0;
+      padding: 32px 18px;
+      transition: box-shadow .2s;
+    }
+    .seccion:hover {
+      box-shadow: 0 6px 24px #b7e4c7;
+    }
+    .seccion img {
+      width: 100%;
+      max-width: 340px;
+      border-radius: 14px;
+      box-shadow: 0 4px 18px #0001;
+      border: 2px solid var(--verde-principal);
+      background: #fff;
+      transition: transform .2s;
+    }
+    .seccion img:hover {
+      transform: scale(1.03);
+      box-shadow: 0 8px 32px #3bb77e33;
+    }
+    .seccion .texto {
+      max-width: 480px;
+      text-align: left;
+      font-size: 1.13em;
+      color: #222;
+      padding: 0 10px;
+    }
+    .seccion h2 {
+      color: var(--verde-principal);
+      text-align: left;
+      margin-bottom: 12px;
+      font-size: 1.5em;
+      letter-spacing: 1px;
+      font-weight: bold;
+      text-shadow: 0 1px 4px #e0e0e0;
+    }
+    .reverso {
+      flex-direction: row-reverse;
+    }
+    .volver-btn {
+      text-align: center;
+      margin: 50px 0 0 0;
+    }
+    .volver-btn a {
+      display: inline-block;
+      padding: 12px 32px;
+      background: var(--verde-principal);
+      color: var(--blanco);
+      text-decoration: none;
+      border-radius: 8px;
+      font-weight: bold;
+      font-size: 1.08em;
+      box-shadow: 0 2px 8px #0001;
+      transition: background .2s, transform .2s;
+      letter-spacing: 1px;
+    }
+    .volver-btn a:hover {
+      background: var(--verde-oscuro);
+      transform: translateY(-2px) scale(1.04);
+    }
+    /* Línea decorativa */
+    .decor {
+      width: 80px;
+      height: 4px;
+      background: linear-gradient(90deg, var(--verde-principal), var(--verde-suave));
+      border-radius: 2px;
+      margin: 24px auto 0 auto;
+    }
+    /* Iconos decorativos */
+    .icono-vision, .icono-mision {
+      font-size: 2.2em;
+      color: var(--verde-principal);
+      margin-bottom: 10px;
+      display: block;
+      text-align: left;
+    }
+    .reverso .icono-mision {
+      text-align: right;
+    }
+    @media (max-width: 900px) {
+      .container {
+        padding: 0 8px 30px 8px;
+      }
+      .seccion {
+        flex-direction: column !important;
+        padding: 24px 8px;
+      }
+      .seccion img, .seccion .texto {
+        max-width: 98%;
+        text-align: center;
+      }
+      .seccion .texto {
+        text-align: center;
+      }
+      .seccion h2 {
+        text-align: center;
+      }
+      .icono-vision, .icono-mision {
+        text-align: center !important;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <div class="hero">
+    <h1>Quiénes Somos</h1>
+    <div class="decor"></div>
+  </div>
+
+  <div class="container">
+    <p>
+      Somos <b>HARA Artesanal</b>, un emprendimiento peruano creado en el año 2020 por una mujer emprendedora, con la visión de ofrecer productos únicos y hechos a mano. Nos especializamos en la elaboración de jabones y velas artesanales, diseñados con dedicación, ingredientes naturales y un profundo respeto por el bienestar y el medio ambiente.<br><br>
+      Nuestro compromiso es brindar experiencias sensoriales que promuevan el autocuidado, el equilibrio y la armonía en cada rincón del hogar. Creemos que pequeños detalles pueden transformar grandes momentos. Con cada creación, buscamos transmitir amor, calidez y autenticidad.<br><br>
+      <b>HARA</b> no es solo una marca, es una forma de vivir lo natural, lo artesanal y lo hecho con el corazón.
+    </p>
+
+    <div class="seccion">
+      <img src="../imagenes/vision.jpg" alt="Visión">
+      <div class="texto">
+        <span class="icono-vision"><i class="fas fa-eye"></i></span>
+        <h2>VISIÓN</h2>
+        <p>
+          Ser reconocida como una marca referente en el mercado artesanal peruano, destacando por la calidad, autenticidad y calidez de nuestros jabones y velas artesanales.<br><br>
+          Aspiramos a expandirnos manteniendo siempre nuestra esencia natural, promoviendo el bienestar emocional y físico de nuestros clientes, y creando experiencias memorables a través de cada producto.<br><br>
+          Queremos llegar a más hogares, inspirando a las personas a reconectarse con lo simple, lo natural y lo hecho con amor.
+        </p>
+      </div>
+    </div>
+
+    <div class="seccion reverso">
+      <img src="../imagenes/mision.jpg" alt="Misión">
+      <div class="texto">
+        <span class="icono-mision"><i class="fas fa-seedling"></i></span>
+        <h2>MISIÓN</h2>
+        <p>
+          Brindar productos artesanales de alta calidad, elaborados con ingredientes naturales y procesos responsables, que promuevan el cuidado personal, el bienestar y el equilibrio emocional.<br><br>
+          En HARA Artesanal, nos comprometemos a ofrecer jabones y velas hechos a mano que inspiren a cada persona a dedicarse un momento de calma, amor propio y conexión consigo misma.<br><br>
+          Nuestra misión es generar experiencias sensoriales únicas que reflejen autenticidad, cercanía y el valor de lo hecho con dedicación y corazón.
+        </p>
+      </div>
+    </div>
+    <div class="volver-btn">
+      <a href="../index.php"><i class="fas fa-arrow-left"></i> Volver al inicio</a>
+    </div>
+  </div>
+
+</body>
+</html>
